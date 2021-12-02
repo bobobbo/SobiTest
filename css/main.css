@@ -1,0 +1,153 @@
+/* style */
+body {
+  background: #020039;
+}
+#wrap {
+  position: relative;
+  overflow: hidden;
+/*  margin-top: 50px;*/
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+}
+.container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  min-width: 100%;
+}
+#main-page{
+    position: relative;
+    box-sizing: border-box;
+    width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+    /*background-color: aqua;*/
+    height: 100vh;
+}
+.red-box{
+    width: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    height: 80px;
+    background-color: red;
+    float: right;
+}
+.left-content{
+    display: inline-block;
+    transform: translateY(60%);
+    color: white;
+}
+.text-f{
+    font-size: 25px;
+}
+.title-point{
+    font-size: 100px;
+    height: 100px;
+    font-weight: bold;
+}
+.time-point{
+    font-size: 40px;
+    font-weight: bold;
+}
+.left-content p{
+    font-size: 18px;
+}
+.m-img-money{
+    width: 560px;
+    height: 360px;
+    position: absolute;
+    right: 0;
+    top: 30%;
+    display: inline-block;
+    /*background-color: bisque;*/
+    background-image: url(../img/money.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.next-btn{
+  display: block;
+    /*transform: translateY(230%);*/
+    margin-top: 40px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    color: white;
+    background-color: red;
+}
+.next-btn:hover{
+    background-color:#c30000;
+}
+@media all and (min-width:320px) and (max-width:768px) {
+    .m-img-money{
+        width: 260px;
+        height: 160px;
+        top: 10%;
+        left: 20%;
+    }
+    .left-content{
+        transform: translateY(30%);
+    }
+}
+
+@media all and (min-width: 768px)and(min-height : 1024px) {
+  /* qna에서 margin-top을 없애야 함 */
+  #wrap {
+/*    margin-top: 115px;*/
+      margin: 0px;
+  }
+  .container {
+    padding: 0 auto;
+    width: 80%;
+    min-width: 80%;
+  }
+.m-img-money{
+    width: 360px;
+        height: 360px;
+        top: 60%;
+        left: 60%;
+    }
+}
+
+@media all and (min-width: 1024px) {
+  /* qna에서 margin-top을 없애야 함 */
+  #wrap {
+/*    margin-top: 150px;*/
+      margin: 0px;
+  }
+  .container {
+    padding: 0 auto;
+    width: 70%;
+    min-width: 70%;
+    border-radius: 30px;
+  }
+    .m-img-money{
+        width: 400px;
+        height: 210px;
+        top: 55%;
+    }
+    .left-content{
+        transform: translateY(50%);
+    }
+}
+
+@media all and (min-width: 1440px) {
+  #result > .container {
+/*    padding: 100px 3.5% 50px 3.5%;*/
+    width: 100%;
+    min-width: 55%;
+  }
+  .m-img-money{
+    width: 560px;
+    height: 360px;
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    display: inline-block;
+    /*background-color: bisque;*/
+    background-image: url(../img/money.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    }
+}
